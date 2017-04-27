@@ -28,5 +28,13 @@ function shuffleGallery()
      rand = Math.floor(Math.random() * arraySize);
   }
   current = chico[rand];
-  console.log(current);
+  document.getElementById("caption").style.fontWeight = 900;
+  document.getElementById("caption").style.color = "blue";
+  document.getElementById("caption").innerHTML = chico[rand].description;
+
+  document.getElementById("picture").src = chico[rand].picture;
+
+  document.getElementById("source").style.fontWeight = 900;
+  document.getElementById("source").style.color = "blue";
+  document.getElementById("source").innerHTML = chico[rand].source;
 }
